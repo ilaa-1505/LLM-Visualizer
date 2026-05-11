@@ -2,6 +2,7 @@ import streamlit as st
 from transformers import GPT2LMHeadModel, GPT2Tokenizer
 
 import os
+import time
 
 
 st.set_page_config(
@@ -21,7 +22,6 @@ tab1, tab2, tab3, tab4, tab5 = st.tabs([
     "Attention Heatmap"
 ])
 
-@st.cache_resource
 @st.cache_resource
 def load_model():
     from transformers import AutoTokenizer, AutoModelForCausalLM
@@ -45,11 +45,16 @@ if "model_loaded" not in st.session_state:
     """, unsafe_allow_html=True)
     tokenizer, model = load_model()
     st.session_state.model_loaded = True
+    st.session_state.show_success = True
     st.rerun()
 else:
     tokenizer, model = load_model()
 
-st.sidebar.success(" Model ready!")
+if st.session_state.get("show_success"):
+    success = st.success("Model ready!")
+    time.sleep(8)
+    success.empty()
+    st.session_state.show_success = False
     
 
 with tab1:
