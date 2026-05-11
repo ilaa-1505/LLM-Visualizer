@@ -22,20 +22,16 @@ tab1, tab2, tab3, tab4, tab5 = st.tabs([
 ])
 
 @st.cache_resource
+@st.cache_resource
 def load_model():
     from transformers import AutoTokenizer, AutoModelForCausalLM
     if not os.path.exists(".model/"):
-        st.spinner("Downloading model...") 
         AutoTokenizer.from_pretrained("distilgpt2").save_pretrained(".model/")
         AutoModelForCausalLM.from_pretrained("distilgpt2").save_pretrained(".model/")
 
-    tokenizer = GPT2Tokenizer.from_pretrained(".model/distilgpt2")
-    model = GPT2LMHeadModel.from_pretrained(
-        ".model/distilgpt2",
-        output_attentions=True
-    )
+    tokenizer = GPT2Tokenizer.from_pretrained(".model/")
+    model = GPT2LMHeadModel.from_pretrained(".model/", output_attentions=True)
     model.eval()
-
     return tokenizer, model
 
 if "model_loaded" not in st.session_state:
