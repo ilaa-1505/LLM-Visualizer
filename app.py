@@ -26,12 +26,12 @@ def load_model():
     from transformers import AutoTokenizer, AutoModelForCausalLM
     if not os.path.exists(".model/"):
         st.spinner("Downloading model...") 
-        AutoTokenizer.from_pretrained("distilgpt2").save_pretrained("model/")
-        AutoModelForCausalLM.from_pretrained("distilgpt2").save_pretrained("model/")
+        AutoTokenizer.from_pretrained("distilgpt2").save_pretrained(".model/")
+        AutoModelForCausalLM.from_pretrained("distilgpt2").save_pretrained(".model/")
 
-    tokenizer = GPT2Tokenizer.from_pretrained("./model/distilgpt2")
+    tokenizer = GPT2Tokenizer.from_pretrained(".model/distilgpt2")
     model = GPT2LMHeadModel.from_pretrained(
-        "./model/distilgpt2",
+        ".model/distilgpt2",
         output_attentions=True
     )
     model.eval()
