@@ -7,6 +7,9 @@
 ![Plotly](https://img.shields.io/badge/Plotly-3F4F75?style=flat&logo=plotly&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-green?style=flat)
 
+🔗 **[Live Demo](https://huggingface.co/spaces/Ilaa-1505/llm-visualizer)**
+> If the Space is sleeping, it may take ~30 seconds to wake up on first visit.
+
 Most people use LLMs every day but have no idea what's actually happening inside. 
 This project makes the invisible visible: every token, every probability, every 
 attention weight, laid out in front of you interactively.
