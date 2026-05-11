@@ -10,7 +10,7 @@ Built with distilgpt2 running fully locally. No API calls. No black box.
 
 ## Demo
 
-> <video controls src="images/demo.mp4" title="Title"></video>
+>![LLM Visualizer Demo](images/llmvisualizerdemo-ezgif.com-video-to-gif-converter.gif)
 
 ---
 
