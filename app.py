@@ -1,6 +1,9 @@
 import streamlit as st
 from transformers import GPT2LMHeadModel, GPT2Tokenizer
 
+import os
+
+
 st.set_page_config(
     page_title="LLM Visualizer",
     page_icon="",
@@ -20,6 +23,12 @@ tab1, tab2, tab3, tab4, tab5 = st.tabs([
 
 @st.cache_resource
 def load_model():
+
+     if not os.path.exists("model/"):
+        st.spinner("Downloading model...") 
+        AutoTokenizer.from_pretrained("distilgpt2").save_pretrained("model/")
+        AutoModelForCausalLM.from_pretrained("distilgpt2").save_pretrained("model/")
+
     tokenizer = GPT2Tokenizer.from_pretrained("./model/distilgpt2")
     model = GPT2LMHeadModel.from_pretrained(
         "./model/distilgpt2",
