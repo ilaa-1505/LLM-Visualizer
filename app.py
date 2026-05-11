@@ -52,7 +52,6 @@ else:
 
 if st.session_state.get("show_success"):
     success = st.success("Model ready!")
-    time.sleep(8)
     success.empty()
     st.session_state.show_success = False
     
