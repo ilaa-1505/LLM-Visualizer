@@ -24,7 +24,7 @@ tab1, tab2, tab3, tab4, tab5 = st.tabs([
 @st.cache_resource
 def load_model():
     from transformers import AutoTokenizer, AutoModelForCausalLM
-    if not os.path.exists("model/"):
+    if not os.path.exists(".model/"):
         st.spinner("Downloading model...") 
         AutoTokenizer.from_pretrained("distilgpt2").save_pretrained("model/")
         AutoModelForCausalLM.from_pretrained("distilgpt2").save_pretrained("model/")
