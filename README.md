@@ -1,5 +1,12 @@
 # LLM Visualizer
 
+![Python](https://img.shields.io/badge/Python-3.8+-3776AB?style=flat&logo=python&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat&logo=pytorch&logoColor=white)
+![HuggingFace](https://img.shields.io/badge/HuggingFace-FFD21E?style=flat&logo=huggingface&logoColor=black)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat&logo=streamlit&logoColor=white)
+![Plotly](https://img.shields.io/badge/Plotly-3F4F75?style=flat&logo=plotly&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-green?style=flat)
+
 Most people use LLMs every day but have no idea what's actually happening inside. 
 This project makes the invisible visible: every token, every probability, every 
 attention weight, laid out in front of you interactively.
