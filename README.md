@@ -20,7 +20,9 @@ Built with distilgpt2 running fully locally. No API calls. No black box.
 
 ## Demo
 
->![LLM Visualizer Demo](images/demo.gif)
+[![Demo](images/demo.gif)](https://youtu.be/vWZcgrbBkpA)
+
+> Click the GIF to view the full demo video
 
 ---
 
