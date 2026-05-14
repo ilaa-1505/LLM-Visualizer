@@ -7,7 +7,7 @@
 ![Plotly](https://img.shields.io/badge/Plotly-3F4F75?style=flat&logo=plotly&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-green?style=flat)
 
-🔗 **[Demo Link](https://huggingface.co/spaces/Ilaa-1505/llm-visualizer)**
+🔗 **[https://huggingface.co/spaces/Ilaa-1505/llm-visualizer](https://huggingface.co/spaces/Ilaa-1505/llm-visualizer)**
 > If the Space is sleeping, it may take ~30 seconds to wake up on first visit.
 
 Most people use LLMs every day but have no idea what's actually happening inside. 
